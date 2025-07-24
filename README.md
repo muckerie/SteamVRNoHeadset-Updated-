@@ -29,3 +29,8 @@ The second file, the SteamVR config file, can be found in `*Steam Directory*/ste
 Change `"requireHmd": true,` to `"requireHmd": false,`, `"forcedDriver": "",` to `"forcedDriver": "null",` and `        "activateMultipleDrivers": false,` to `"activateMultipleDrivers": true,`.
 
 Notice that, like it says at the top of the file, this file will be replaced when SteamVR updates. If you want, you can place the settings in your `steamvr.vrsettings` file located somewhere in the Steam directory. Make sure you place them under the `steamvr` header.
+
+## Fixing headset being asleep
+
+
+Once you display VR view, You should go to the startup/shutdown area of the Steamvr settings and set the auto turn off time to 5 minutes. Close SteamVR completely.  This then creates the entry in  C:\Program Files (x86)\Steam\config\steamvr called turnOffScreensTimeout and set that to however many seconds you want it to be on.
